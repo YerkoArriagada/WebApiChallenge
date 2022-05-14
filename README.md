@@ -1,5 +1,36 @@
 # WebApiChallenge
 
+
+## Desafio
+
+
+### Nivel 1 
+
+Crear una API REST, con el servicio “/coupon/” en donde se pueda enviar la lista de item_ids y el monto del cupón y devuelva los items que tendría que comprar el usuario.
+
+curl -X 'POST' 'https://localhost:7030/coupon' -H 'accept: text/plain' -H 'Content-Type: application/json' -d
+
+{
+    "items_ids": ["MLC981749162", "MLC966500044", "MLC599235202", "MLC966621275", "MLC979294459"],
+    "amount": 100000
+}
+
+### Nivel 2
+
+Crear un servicio el cual devuelve el top 5 de ítems más “favoriteados”.
+
+curl -X 'GET' 'https://localhost:7030/stats' -H 'accept: text/plain'
+
+### Nivel 3
+
+Hostear esa API en un cloud computing libre (Google App Engine, Amazon AWS, etc).
+
+https://webapichallenge20220514002445.azurewebsites.net/swagger/index.html
+
+
+
+# Entregar
+
 ## I. Código fuente repositorio github
 
 Enlace: https://github.com/YerkoArriagada/WebApiChallenge.git
@@ -38,11 +69,11 @@ La api cuenta con una base de datos (Microsoft SQL Server Express LocalDB) basic
 
 ***- Optener la lista de items:***
 
-curl -X 'GET' 'https://webapichallenge20220514002445.azurewebsites.net/api/items' -H 'accept: text/plain'
+curl -X 'GET' 'https://localhost:7030/api/items' -H 'accept: text/plain'
 
 ***- Obtener un item por id:***
 
-curl -X 'GET' 'https://webapichallenge20220514002445.azurewebsites.net/api/items/1' -H 'accept: text/plain'
+curl -X 'GET' 'https://localhost:7030/api/items/1' -H 'accept: text/plain'
 
 ***- Buscar item por item_id:***
 
@@ -50,7 +81,7 @@ curl -X 'GET' 'https://localhost:7030/api/items/MLA' -H 'accept: text/plain
 
 ***- Modificar un item por id:***
 
-curl -X 'PUT' 'https://webapichallenge20220514002445.azurewebsites.net/api/items/1' -H 'accept: */*' -H 'Content-Type: application/json'
+curl -X 'PUT' 'https://localhost:7030/api/items/1' -H 'accept: */*' -H 'Content-Type: application/json'
 
 {
   "id_item": "string",
@@ -123,3 +154,6 @@ curl -X 'POST' 'https://localhost:7030/api/users/saveusers' -H 'accept: */*' -H 
   }
 ]
 
+## III. URL de la API
+
+https://webapichallenge20220514002445.azurewebsites.net/swagger/index.html
