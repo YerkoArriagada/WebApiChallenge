@@ -1,9 +1,9 @@
 # WebApiChallenge
 
-<h1>Codigo fuente repositorio github<h1>
+### I. Codigo fuente repositorio github
 
 Enlace: https://github.com/YerkoArriagada/WebApiChallenge.git
 
-Instrucciones de cómo ejecutar el programa o levantar la app.
+### II. Instrucciones de cómo ejecutar el programa o levantar la app.
 
-
+1. Despues de haber descargado el proyecto WebApiChallenge
